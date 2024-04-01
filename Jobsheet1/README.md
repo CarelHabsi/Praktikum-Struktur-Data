@@ -30,6 +30,3 @@ Binary Tree adalah struktur data hierarkis yang terdiri dari simpul-simpul (node
 
 #### - Graph
 Graph adalah struktur data yang terdiri dari kumpulan simpul (nodes) yang terhubung oleh edge atau sisi. Graph dapat digunakan untuk merepresentasikan hubungan antar objek.
-
-## Contoh Implementasi
-Dalam praktikum ini, akan diberikan contoh implementasi struktur data menggunakan bahasa pemrograman C/C++/Java/Python, tergantung dari preferensi dan kebutuhan masing-masing mahasiswa.
