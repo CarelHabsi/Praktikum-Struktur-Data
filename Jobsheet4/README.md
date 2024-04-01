@@ -10,7 +10,7 @@ Setiap node dalam doubly linked list terdiri dari tiga bagian utama:
 3. **Pointer next**: Menunjuk ke node berikutnya dalam linked list.
 
 ## Alur Node dalam Doubly Linked List
-![Alur Node Doubly Linked List](https://raw.githubusercontent.com/yourusername/yourrepositoryname/main/doublyLinkedListFlow.png)
+![Alur Node Doubly Linked List](https://storage.googleapis.com/kotakode-prod-public/images/6c8785e1-fb53-49f6-a280-4a199a3c17d9-image.png)
 
 - Setiap node memiliki dua pointer, yaitu pointer prev dan pointer next.
 - Node pertama disebut sebagai *head* yang menunjuk ke node pertama dalam linked list.
