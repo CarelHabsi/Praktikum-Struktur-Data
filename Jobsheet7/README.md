@@ -9,7 +9,7 @@ Queue terdiri dari dua operasi utama:
 2. **Dequeue**: Menghapus elemen dari depan queue.
 
 ## Alur Node dalam Queue
-![Alur Node Queue](https://raw.githubusercontent.com/yourusername/yourrepositoryname/main/queueFlow.png)
+![Alur Node Queue](https://cdn.programiz.com/sites/tutorial2program/files/queue.png)
 
 - Setiap node dalam queue memiliki dua bagian utama: data (nilai yang disimpan) dan pointer (alamat memori node berikutnya).
 - Elemen baru ditambahkan ke belakang queue.
