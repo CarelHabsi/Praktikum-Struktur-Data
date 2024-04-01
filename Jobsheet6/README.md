@@ -10,7 +10,7 @@ Stack terdiri dari tiga operasi utama:
 3. **Peek**: Melihat nilai elemen teratas dari stack tanpa menghapusnya.
 
 ## Alur Node dalam Stack
-![Alur Node Stack](https://raw.githubusercontent.com/yourusername/yourrepositoryname/main/stackFlow.png)
+![Alur Node Stack](https://ids.ac.id/wp-content/uploads/2023/04/2-1024x576.jpg)
 
 - Setiap node dalam stack memiliki dua bagian utama: data (nilai yang disimpan) dan pointer (alamat memori node sebelumnya).
 - Elemen terbaru ditambahkan ke atas stack.
