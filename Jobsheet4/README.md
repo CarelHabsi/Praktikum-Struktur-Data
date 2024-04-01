@@ -86,4 +86,4 @@ int main() {
 }
 ```
 
-Dalam contoh di atas, kita menggunakan struktur Node dengan pointer 'prev' dan next untuk merepresentasikan node dalam doubly linked list. Fungsi insertAtBeginning digunakan untuk menambahkan node baru di awal linked list, dan fungsi printForward dan printBackward digunakan untuk mencetak isi linked list dari depan dan belakang.
+Dalam contoh di atas, kita menggunakan struktur Node dengan pointer **prev** dan **next** untuk merepresentasikan node dalam doubly linked list. Fungsi **insertAtBeginning** digunakan untuk menambahkan node baru di awal linked list, dan fungsi **printForward** dan **printBackward** digunakan untuk mencetak isi linked list dari depan dan belakang.
