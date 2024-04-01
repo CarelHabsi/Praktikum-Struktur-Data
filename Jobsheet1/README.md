@@ -29,9 +29,3 @@ Struktur data adalah cara untuk menyimpan dan mengorganisir data di dalam komput
   - Multilist: `multilist.cpp`
   - Binary Tree: `binary_tree.cpp`
   - Graph: `graph.cpp`
-
-## Referensi
-1. Data Structures and Algorithms in C++ by Adam Drozdek
-2. Introduction to Algorithms by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein
-3. GeeksforGeeks (https://www.geeksforgeeks.org/data-structures/)
-4. Tutorialspoint (https://www.tutorialspoint.com/data_structures_algorithms/index.htm)
