@@ -7,7 +7,7 @@ Circular linked list dan circular doubly linked list adalah struktur data linier
 Circular linked list adalah struktur data linier di mana setiap node memiliki pointer yang menunjuk ke node berikutnya, dan node terakhir menunjuk kembali ke node pertama, membentuk lingkaran.
 
 ### Alur Node Circular Linked List
-![Alur Node Circular Linked List](https://raw.githubusercontent.com/yourusername/yourrepositoryname/main/circularLinkedListFlow.png)
+![Alur Node Circular Linked List](https://slideplayer.info/slide/12700172/76/images/2/Circular+Single+Linked+list+Circular+Double+Linked+list.jpg)
 
 - Setiap node memiliki satu pointer yang menunjuk ke node berikutnya.
 - Node terakhir (tail) menunjuk kembali ke node pertama (head), membentuk lingkaran.
