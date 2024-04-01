@@ -9,7 +9,7 @@ Linked list dapat dibagi menjadi dua jenis utama:
 2. **Doubly Linked List**: Setiap node memiliki dua pointer, yaitu pointer yang menunjuk ke node sebelumnya dan pointer yang menunjuk ke node berikutnya.
 
 ## Alur Node dalam Linked List
-![Alur Node Linked List](https://raw.githubusercontent.com/yourusername/yourrepositoryname/main/linkedListFlow.png)
+![Alur Node Linked List](https://www.simplilearn.com/ice9/free_resources_article_thumb/Types-of-Linked-List/types_of_linked_list-singly-linked-list-img1.PNG)
 
 - Setiap node dalam linked list terdiri dari dua bagian utama: data (nilai yang disimpan) dan pointer (alamat memori node berikutnya).
 - Node pertama disebut sebagai *head* yang menunjuk ke node pertama dalam linked list.
