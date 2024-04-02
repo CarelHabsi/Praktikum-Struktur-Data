@@ -3,238 +3,278 @@
 #include <string.h>
 #include <windows.h>
 
-struct Car {
+struct Mobil {
     char noPlat[20];
     char merkMobil[20];
     char namaPemilik[50];
-    struct Car* next;
+    struct Mobil* next;
 };
 
-void enqueue(struct Car** head, struct Car** tail, char noPlat[], char merkMobil[], char namaPemilik[]) {
-    struct Car* newCar = (struct Car*)malloc(sizeof(struct Car));
-    strcpy(newCar->noPlat, noPlat);
-    strcpy(newCar->merkMobil, merkMobil);
-    strcpy(newCar->namaPemilik, namaPemilik);
-    newCar->next = NULL;
+void tambahParkiran(struct Mobil** kepala, struct Mobil** ekor, char noPlat[], char merkMobil[], char namaPemilik[]) {
+    struct Mobil* mobilBaru = (struct Mobil*)malloc(sizeof(struct Mobil));
+    strcpy(mobilBaru->noPlat, noPlat);
+    strcpy(mobilBaru->merkMobil, merkMobil);
+    strcpy(mobilBaru->namaPemilik, namaPemilik);
+    mobilBaru->next = NULL;
 
-    if (*head == NULL) {
-        *head = newCar;
-        *tail = newCar;
+    if (*kepala == NULL) {
+        *kepala = mobilBaru;
+        *ekor = mobilBaru;
     } else {
-        (*tail)->next = newCar;
-        *tail = newCar;
+        (*ekor)->next = mobilBaru;
+        *ekor = mobilBaru;
     }
 
-    printf("Car added to the queue.\n");
+    printf("Mobil ditambahkan ke parkiran.\n");
 }
 
-void dequeue(struct Car** head, struct Car** tail) {
-    if (*head == NULL) {
-        printf("Queue is empty.\n");
+void keluarkanParkiran(struct Mobil** kepala, struct Mobil** ekor) {
+    if (*kepala == NULL) {
+        printf("Parkiran kosong.\n");
     } else {
-        struct Car* temp = *head;
-        *head = (*head)->next;
+        struct Mobil* temp = *kepala;
+        *kepala = (*kepala)->next;
         free(temp);
-        printf("Car removed from the queue.\n");
+        printf("Mobil dikeluarkan dari parkiran.\n");
     }
 }
 
-void displayQueue(struct Car* head) {
-    if (head == NULL) {
-        printf("Queue is empty.\n");
+void tampilkanParkiran(struct Mobil* kepala) {
+    if (kepala == NULL) {
+        printf("Parkiran kosong.\n");
     } else {
-        struct Car* current = head;
-        printf("Cars in the queue:\n");
+        struct Mobil* current = kepala;
+        printf("Mobil dalam parkiran:\n");
         while (current != NULL) {
-            printf("License Plate: %s\n", current->noPlat);
-            printf("Car Brand: %s\n", current->merkMobil);
-            printf("Owner's Name: %s\n", current->namaPemilik);
+            printf("Nomor Plat: %s\n", current->noPlat);
+            printf("Merk Mobil: %s\n", current->merkMobil);
+            printf("Nama Pemilik: %s\n", current->namaPemilik);
             printf("--------------------\n");
             current = current->next;
         }
     }
 }
 
-void freeQueue(struct Car* head) {
-    struct Car* current = head;
+void bebaskanParkiran(struct Mobil* kepala) {
+    struct Mobil* current = kepala;
     while (current != NULL) {
-        struct Car* temp = current;
+        struct Mobil* temp = current;
         current = current->next;
         free(temp);
     }
 }
 
-void addCarToBeginning(struct Car** head, struct Car** tail, char noPlat[], char merkMobil[], char namaPemilik[]) {
-    struct Car* newCar = (struct Car*)malloc(sizeof(struct Car));
-    strcpy(newCar->noPlat, noPlat);
-    strcpy(newCar->merkMobil, merkMobil);
-    strcpy(newCar->namaPemilik, namaPemilik);
-    newCar->next = *head;
+void tambahMobilKeAwal(struct Mobil** kepala, struct Mobil** ekor, char noPlat[], char merkMobil[], char namaPemilik[]) {
+    struct Mobil* mobilBaru = (struct Mobil*)malloc(sizeof(struct Mobil));
+    strcpy(mobilBaru->noPlat, noPlat);
+    strcpy(mobilBaru->merkMobil, merkMobil);
+    strcpy(mobilBaru->namaPemilik, namaPemilik);
+    mobilBaru->next = *kepala;
 
-    if (*head == NULL) {
-        *head = newCar;
-        *tail = newCar;
+    if (*kepala == NULL) {
+        *kepala = mobilBaru;
+        *ekor = mobilBaru;
     } else {
-        *head = newCar;
+        *kepala = mobilBaru;
     }
 
-    printf("Car added to the beginning of the queue.\n");
+    printf("Mobil ditambahkan ke awal parkiran.\n");
 }
 
-void addCarToEnd(struct Car** head, struct Car** tail, char noPlat[], char merkMobil[], char namaPemilik[]) {
-    struct Car* newCar = (struct Car*)malloc(sizeof(struct Car));
-    strcpy(newCar->noPlat, noPlat);
-    strcpy(newCar->merkMobil, merkMobil);
-    strcpy(newCar->namaPemilik, namaPemilik);
-    newCar->next = NULL;
+void tambahMobilKeAkhir(struct Mobil** kepala, struct Mobil** ekor, char noPlat[], char merkMobil[], char namaPemilik[]) {
+    struct Mobil* mobilBaru = (struct Mobil*)malloc(sizeof(struct Mobil));
+    strcpy(mobilBaru->noPlat, noPlat);
+    strcpy(mobilBaru->merkMobil, merkMobil);
+    strcpy(mobilBaru->namaPemilik, namaPemilik);
+    mobilBaru->next = NULL;
 
-    if (*head == NULL) {
-        *head = newCar;
-        *tail = newCar;
+    if (*kepala == NULL) {
+        *kepala = mobilBaru;
+        *ekor = mobilBaru;
     } else {
-        (*tail)->next = newCar;
-        *tail = newCar;
+        (*ekor)->next = mobilBaru;
+        *ekor = mobilBaru;
     }
 
-    printf("Car added to the end of the queue.\n");
+    printf("Mobil ditambahkan ke akhir parkiran.\n");
 }
 
-void addCarAtPosition(struct Car** head, struct Car** tail, char noPlat[], char merkMobil[], char namaPemilik[], int position) {
-    struct Car* newCar = (struct Car*)malloc(sizeof(struct Car));
-    strcpy(newCar->noPlat, noPlat);
-    strcpy(newCar->merkMobil, merkMobil);
-    strcpy(newCar->namaPemilik, namaPemilik);
-    newCar->next = NULL;
+void tambahMobilPadaPosisi(struct Mobil** kepala, struct Mobil** ekor, char noPlat[], char merkMobil[], char namaPemilik[], int posisi) {
+    struct Mobil* mobilBaru = (struct Mobil*)malloc(sizeof(struct Mobil));
+    strcpy(mobilBaru->noPlat, noPlat);
+    strcpy(mobilBaru->merkMobil, merkMobil);
+    strcpy(mobilBaru->namaPemilik, namaPemilik);
+    mobilBaru->next = NULL;
 
-    if (*head == NULL) {
-        *head = newCar;
-        *tail = newCar;
-    } else if (position == 0) {
-        newCar->next = *head;
-        *head = newCar;
+    if (*kepala == NULL) {
+        *kepala = mobilBaru;
+        *ekor = mobilBaru;
+    } else if (posisi == 0) {
+        mobilBaru->next = *kepala;
+        *kepala = mobilBaru;
     } else {
-        struct Car* current = *head;
+        struct Mobil* current = *kepala;
         int count = 0;
-        while (current != NULL && count < position - 1) {
+        while (current != NULL && count < posisi - 1) {
             current = current->next;
             count++;
         }
         if (current == NULL) {
-            printf("Invalid position.\n");
+            printf("Posisi tidak valid.\n");
             return;
         }
-        newCar->next = current->next;
-        current->next = newCar;
+        mobilBaru->next = current->next;
+        current->next = mobilBaru;
     }
 
-    printf("Car added at position %d in the queue.\n", position);
+    printf("Mobil ditambahkan pada posisi %d dalam parkiran.\n", posisi);
 }
 
-void removeAllCars(struct Car** head, struct Car** tail) {
-    struct Car* current = *head;
+void hapusSemuaMobil(struct Mobil** kepala, struct Mobil** ekor) {
+    struct Mobil* current = *kepala;
     while (current != NULL) {
-        struct Car* temp = current;
+        struct Mobil* temp = current;
         current = current->next;
         free(temp);
     }
-    *head = NULL;
-    *tail = NULL;
-    printf("All cars removed from the queue.\n");
+    *kepala = NULL;
+    *ekor = NULL;
+    printf("Semua mobil dihapus dari parkiran.\n");
+}
+
+void hapusMobilDenganNoPlat(struct Mobil** kepala, struct Mobil** ekor, char noPlat[]) {
+    if (*kepala == NULL) {
+        printf("Parkiran kosong.\n");
+        return;
+    }
+
+    struct Mobil* current = *kepala;
+    struct Mobil* prevNode = NULL;
+
+    while (current != NULL) {
+        if (strcmp(current->noPlat, noPlat) == 0) {
+            if (prevNode == NULL) {
+                *kepala = current->next;
+            } else {
+                prevNode->next = current->next;
+            }
+
+            if (current->next == NULL) {
+                *ekor = prevNode;
+            }
+
+            printf("Mobil dengan nomor plat %s dihapus dari parkiran.\n", noPlat);
+            free(current);
+            return;
+        }
+        prevNode = current;
+        current = current->next;
+    }
+
+    printf("Mobil dengan nomor plat %s tidak ditemukan dalam parkiran.\n", noPlat);
 }
 
 int main() {
     system("cls");
-    struct Car* head = NULL;
-    struct Car* tail = NULL;
-    int choice;
+    struct Mobil* kepala = NULL;
+    struct Mobil* ekor = NULL;
+    int pilihan;
 
     do {
         printf("Menu:\n");
-        printf("1. Add a car to the queue\n");
-        printf("2. Remove a car from the queue\n");
-        printf("3. Display the cars in the queue\n");
-        printf("4. Add a car to the beginning of the queue\n");
-        printf("5. Add a car to the end of the queue\n");
-        printf("6. Add a car at a specific position in the queue\n");
-        printf("7. Remove all cars from the queue\n");
-        printf("8. Exit\n");
-        printf("Enter your choice: ");
-        scanf("%d", &choice);
+        printf("1. Tambah mobil ke parkiran\n");
+        printf("2. Keluarkan mobil dari parkiran\n");
+        printf("3. Tampilkan mobil dalam parkiran\n");
+        printf("4. Tambah mobil ke awal parkiran\n");
+        printf("5. Tambah mobil ke akhir parkiran\n");
+        printf("6. Tambah mobil pada posisi tertentu dalam parkiran\n");
+        printf("7. Hapus semua mobil dari parkiran\n");
+        printf("8. Hapus mobil berdasarkan nomor plat\n");
+        printf("9. Keluar\n");
+        printf("Masukkan pilihan Anda: ");
+        scanf("%d", &pilihan);
 
-        switch (choice) {
+        switch (pilihan) {
             case 1: {
                 char noPlat[20];
                 char merkMobil[20];
                 char namaPemilik[50];
-                printf("Enter license plate: ");
+                printf("Masukkan nomor plat: ");
                 scanf("%s", noPlat);
-                printf("Enter car brand: ");
+                printf("Masukkan merk mobil: ");
                 scanf("%s", merkMobil);
-                printf("Enter owner's name: ");
+                printf("Masukkan nama pemilik: ");
                 scanf("%s", namaPemilik);
-                enqueue(&head, &tail, noPlat, merkMobil, namaPemilik);
+                tambahParkiran(&kepala, &ekor, noPlat, merkMobil, namaPemilik);
                 break;
             }
             case 2: {
-                dequeue(&head, &tail);
+                keluarkanParkiran(&kepala, &ekor);
                 break;
             }
             case 3: {
-                displayQueue(head);
+                tampilkanParkiran(kepala);
                 break;
             }
             case 4: {
                 char noPlat[20];
                 char merkMobil[20];
                 char namaPemilik[50];
-                printf("Enter license plate: ");
+                printf("Masukkan nomor plat: ");
                 scanf("%s", noPlat);
-                printf("Enter car brand: ");
+                printf("Masukkan merk mobil: ");
                 scanf("%s", merkMobil);
-                printf("Enter owner's name: ");
+                printf("Masukkan nama pemilik: ");
                 scanf("%s", namaPemilik);
-                addCarToBeginning(&head, &tail, noPlat, merkMobil, namaPemilik);
+                tambahMobilKeAwal(&kepala, &ekor, noPlat, merkMobil, namaPemilik);
                 break;
             }
             case 5: {
                 char noPlat[20];
                 char merkMobil[20];
                 char namaPemilik[50];
-                printf("Enter license plate: ");
+                printf("Masukkan nomor plat: ");
                 scanf("%s", noPlat);
-                printf("Enter car brand: ");
+                printf("Masukkan merk mobil: ");
                 scanf("%s", merkMobil);
-                printf("Enter owner's name: ");
+                printf("Masukkan nama pemilik: ");
                 scanf("%s", namaPemilik);
-                addCarToEnd(&head, &tail, noPlat, merkMobil, namaPemilik);
+                tambahMobilKeAkhir(&kepala, &ekor, noPlat, merkMobil, namaPemilik);
                 break;
             }
             case 6: {
                 char noPlat[20];
                 char merkMobil[20];
                 char namaPemilik[50];
-                int position;
-                printf("Enter license plate: ");
+                int posisi;
+                printf("Masukkan nomor plat: ");
                 scanf("%s", noPlat);
-                printf("Enter car brand: ");
+                printf("Masukkan merk mobil: ");
                 scanf("%s", merkMobil);
-                printf("Enter owner's name: ");
+                printf("Masukkan nama pemilik: ");
                 scanf("%s", namaPemilik);
-                printf("Enter position: ");
-                scanf("%d", &position);
-                addCarAtPosition(&head, &tail, noPlat, merkMobil, namaPemilik, position);
+                printf("Masukkan posisi: ");
+                scanf("%d", &posisi);
+                tambahMobilPadaPosisi(&kepala, &ekor, noPlat, merkMobil, namaPemilik, posisi);
                 break;
             }
             case 7: {
-                removeAllCars(&head, &tail);
+                hapusSemuaMobil(&kepala, &ekor);
                 break;
             }
             case 8: {
-                freeQueue(head);
+                char noPlat[20];
+                printf("Masukkan nomor plat untuk dihapus: ");
+                scanf("%s", noPlat);
+                hapusMobilDenganNoPlat(&kepala, &ekor, noPlat);
+                break;
+            }
+            case 9: {
+                bebaskanParkiran(kepala);
                 return 0;
             }
             default: {
-                printf("Invalid choice. Please try again.\n");
+                printf("Pilihan tidak valid. Silakan coba lagi.\n");
                 break;
             }
         }
