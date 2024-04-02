@@ -20,29 +20,30 @@ int main() {
     Mahasiswa mhs[MAX_MHS];
 
     for (i = 0; i < n; i++) {
-    	printf("\n---------------------------------------\n");
-    	
+        printf("\n---------------------------------------\n");
+
         printf("Masukkan NIM mahasiswa ke-%d: ", i+1);
         scanf("%s", mhs[i].NIM);
 
         printf("Masukkan nama mahasiswa ke-%d: ", i+1);
         scanf(" %[^\n]", mhs[i].Nama);
+        getchar();
 
         printf("Masukkan tanggal lahir mahasiswa ke-%d: ", i+1);
         scanf("%s", mhs[i].tanggal_lahir);
 
         printf("Masukkan IPK mahasiswa ke-%d: ", i+1);
-        scanf("%f", &mhs[i].ipk);  
+        scanf("%f", &mhs[i].ipk);
     }
 
     printf("\n---------------------------------------\n");
 
-    for (i = 0; i < 0; i++){
-        printf("Mahasiswa ke - %d", i+1);
-        printf("NIM : %s", mhs[i].NIM);
-        printf("Nama : %s", mhs[i].Nama);
-        printf("Tanggal Lahir : %s", mhs[i].tanggal_lahir);
-        printf("IPK : %f", mhs[i].ipk);
+    for (i = 0; i < n; i++) {
+        printf("Mahasiswa ke - %d\n", i+1);
+        printf("NIM : %s\n", mhs[i].NIM);
+        printf("Nama : %s\n", mhs[i].Nama);
+        printf("Tanggal Lahir : %s\n", mhs[i].tanggal_lahir);
+        printf("IPK : %.2f\n", mhs[i].ipk);
         printf("\n");
     }
 
