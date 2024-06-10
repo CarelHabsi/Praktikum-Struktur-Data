@@ -3,6 +3,22 @@
 ## 📋 Deskripsi
 Repository ini merupakan arsip pengumpulan tugas saya selama satu semester pada matakuliah Praktikum Struktur Data yang dibimbing oleh dosen kami yakni Randi Proska Sandra, S.Pd, M.Sc. Tugas pada repository ini diperuntukkan mahasiswa Informatika agar memahami konsep struktur data pada pemrograman terkhusus pada pemrograman bahasa C.
 
+## 【 Daftar Jobsheet 】
+- [Jobsheet 1](#jobsheet-01)
+- [Jobsheet 2](#jobsheet-02)
+- [Jobsheet 3](#jobsheet-03)
+- [Jobsheet 4](#jobsheet-04)
+- [Jobsheet 5](#jobsheet-05)
+- [Jobsheet 6](#jobsheet-06)
+- [Jobsheet 7](#jobsheet-07)
+- [Jobsheet 8](#jobsheet-08)
+- [Jobsheet 9](#jobsheet-09)
+- [Jobsheet 10](#jobsheet-10)
+- [Jobsheet 11](#jobsheet-11)
+- [Jobsheet 12](#jobsheet-12)
+- [Jobsheet 13](#jobsheet-13)
+
+<div id="jobsheet-1">#Jobsheet 1</div>
 # Materi Praktikum Struktur Data
 
 ## Pengantar
