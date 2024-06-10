@@ -21,7 +21,6 @@ Repository ini merupakan arsip pengumpulan tugas saya selama satu semester pada 
 <div id="jobsheet-1">
   <h1>Jobsheet 1</h1>
 </div>
-<br>
 
 <h2>Materi Praktikum Struktur Data</h2>
 
