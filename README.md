@@ -700,6 +700,9 @@ Dengan demikian, meskipun kedua algoritma sederhana, Insertion Sort umumnya lebi
 ## Konsep Selection Sort:
 Selection Sort adalah algoritma pengurutan yang bekerja dengan cara membagi daftar menjadi dua bagian: sublist yang terurut dan sublist yang tidak terurut. Algoritma ini secara iteratif memilih elemen terkecil (atau terbesar, tergantung pada urutan yang diinginkan) dari sublist yang tidak terurut dan menempatkannya di akhir sublist yang terurut.
 
+## Alur Node Selection Sort
+![Alur Node Selection Sort](https://mikirinkode.com/wp-content/uploads/2021/11/selection-sort-proses-1024x933.png)
+
 Langkah-langkah:
 
 1. Mulai dari elemen pertama, anggap elemen ini sebagai elemen terkecil.
@@ -737,6 +740,9 @@ void selectionSort(int arr[], int n) {
 
 ## Konsep Merge Sort:
 Merge Sort adalah algoritma pengurutan yang menggunakan pendekatan divide and conquer. Algoritma ini membagi daftar menjadi dua sublist yang lebih kecil, mengurutkan setiap sublist secara rekursif, dan kemudian menggabungkan dua sublist yang terurut untuk menghasilkan daftar yang terurut.
+
+## Alur Node Merge Sort
+![Alur Node Merge Sort](https://www.programiz.com/sites/tutorial2program/files/merge-sort-example_0.png)
 
 Langkah-langkah:
 
