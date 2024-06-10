@@ -136,7 +136,7 @@ int pop(Stack *s) {
 ```
 
 <div id="jobsheet-3">
-  <h1>Jobsheet 1</h1>
+  <h1>Jobsheet 3</h1>
 </div>
 
 <h2 align="center">Single Linked List</h2>
