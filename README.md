@@ -694,3 +694,138 @@ Dengan demikian, meskipun kedua algoritma sederhana, Insertion Sort umumnya lebi
 </div>
 
 <h1 align="center">Selection and Merge Sort</h1>
+
+# Selection Sort
+
+## Konsep Selection Sort:
+Selection Sort adalah algoritma pengurutan yang bekerja dengan cara membagi daftar menjadi dua bagian: sublist yang terurut dan sublist yang tidak terurut. Algoritma ini secara iteratif memilih elemen terkecil (atau terbesar, tergantung pada urutan yang diinginkan) dari sublist yang tidak terurut dan menempatkannya di akhir sublist yang terurut.
+
+Langkah-langkah:
+
+1. Mulai dari elemen pertama, anggap elemen ini sebagai elemen terkecil.
+2. Bandingkan elemen ini dengan elemen berikutnya di daftar untuk menemukan elemen terkecil di antara mereka.
+3. Setelah menemukan elemen terkecil, tukar elemen tersebut dengan elemen pertama.
+4. Ulangi proses untuk elemen berikutnya di sublist yang tidak terurut.
+5. Lanjutkan proses hingga seluruh daftar terurut.
+
+Implementasi dalam C:
+
+```c
+void selectionSort(int arr[], int n) {
+    for (int i = 0; i < n-1; i++) {
+        int min_idx = i;
+        for (int j = i+1; j < n; j++) {
+            if (arr[j] < arr[min_idx]) {
+                min_idx = j;
+            }
+        }
+        // Tukar elemen terkecil yang ditemukan dengan elemen pertama dari sublist yang tidak terurut
+        int temp = arr[min_idx];
+        arr[min_idx] = arr[i];
+        arr[i] = temp;
+    }
+}
+```
+## Kompleksitas Waktu:
+
+- Terburuk (Worst Case): O(n^2)
+- Rata-rata (Average Case): O(n^2)
+- Terbaik (Best Case): O(n^2)
+- Tidak tergantung pada urutan awal daftar
+
+# Merge Sort
+
+## Konsep Merge Sort:
+Merge Sort adalah algoritma pengurutan yang menggunakan pendekatan divide and conquer. Algoritma ini membagi daftar menjadi dua sublist yang lebih kecil, mengurutkan setiap sublist secara rekursif, dan kemudian menggabungkan dua sublist yang terurut untuk menghasilkan daftar yang terurut.
+
+Langkah-langkah:
+
+1. Jika daftar berisi satu elemen atau kosong, maka daftar sudah terurut.
+2. Bagi daftar menjadi dua sublist yang lebih kecil.
+3. Urutkan setiap sublist secara rekursif dengan menggunakan Merge Sort.
+4. Gabungkan dua sublist yang terurut menjadi satu daftar terurut.
+
+Implementasi dalam C:
+
+```c
+void merge(int arr[], int l, int m, int r) {
+    int n1 = m - l + 1;
+    int n2 = r - m;
+
+    int L[n1], R[n2];
+
+    for (int i = 0; i < n1; i++)
+        L[i] = arr[l + i];
+    for (int j = 0; j < n2; j++)
+        R[j] = arr[m + 1 + j];
+
+    int i = 0, j = 0, k = l;
+    while (i < n1 && j < n2) {
+        if (L[i] <= R[j]) {
+            arr[k] = L[i];
+            i++;
+        } else {
+            arr[k] = R[j];
+            j++;
+        }
+        k++;
+    }
+
+    while (i < n1) {
+        arr[k] = L[i];
+        i++;
+        k++;
+    }
+
+    while (j < n2) {
+        arr[k] = R[j];
+        j++;
+        k++;
+    }
+}
+
+void mergeSort(int arr[], int l, int r) {
+    if (l < r) {
+        int m = l + (r - l) / 2;
+
+        mergeSort(arr, l, m);
+        mergeSort(arr, m + 1, r);
+
+        merge(arr, l, m, r);
+    }
+}
+```
+## Kompleksitas Waktu:
+
+- Terburuk (Worst Case): O(n log n)
+- Rata-rata (Average Case): O(n log n)
+- Terbaik (Best Case): O(n log n)
+- Konsisten terlepas dari urutan awal daftar
+- Perbandingan Selection Sort dan Merge Sort
+
+## Kesederhanaan:
+
+Selection Sort mudah dipahami dan diimplementasikan tetapi tidak efisien untuk daftar besar.
+Merge Sort lebih kompleks tetapi sangat efisien.
+
+## Kompleksitas Waktu:
+
+- Selection Sort memiliki kompleksitas O(n^2) di semua kasus.
+- Merge Sort memiliki kompleksitas O(n log n) di semua kasus.
+
+## Stabilitas:
+
+- Selection Sort tidak stabil (elemen dengan nilai yang sama mungkin tidak mempertahankan urutan relatifnya).
+- Merge Sort stabil.
+
+Penggunaan Memori:
+
+- Selection Sort adalah in-place, tidak memerlukan memori tambahan yang signifikan.
+- Merge Sort bukan in-place, memerlukan memori tambahan untuk sublist sementara.
+
+## Kinerja Terbaik:
+
+- Merge Sort lebih efisien untuk daftar besar dan memiliki kinerja yang konsisten.
+- Selection Sort lebih cocok untuk daftar kecil atau kasus di mana kesederhanaan lebih penting daripada efisiensi.
+
+Dengan demikian, Merge Sort lebih disukai untuk pengurutan yang efisien, terutama untuk daftar besar, sementara Selection Sort mungkin digunakan dalam konteks di mana algoritma yang lebih sederhana lebih diinginkan.
