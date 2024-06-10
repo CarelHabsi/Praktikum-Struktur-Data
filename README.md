@@ -22,7 +22,7 @@ Repository ini merupakan arsip pengumpulan tugas saya selama satu semester pada 
   <h1>Jobsheet 1</h1>
 </div>
 
-<h2 align="center">Pengenalan Praktikum Struktur Data</h2>
+<h1 align="center">Pengenalan Praktikum Struktur Data</h1>
 
 ## Pengantar
 Struktur data adalah cara untuk menyimpan, mengatur, dan mengakses data dengan efisien. Dalam praktikum ini, kita akan mempelajari struktur data sederhana seperti array dan record, serta struktur data majemuk seperti Linear (stack, queue, list, multilist) dan Non-Linier (pohon biner dan graph).
@@ -139,7 +139,7 @@ int pop(Stack *s) {
   <h1>Jobsheet 3</h1>
 </div>
 
-<h2 align="center">Single Linked List</h2>
+<h1 align="center">Single Linked List</h1>
 
 # Struktur Data Linked List dalam Bahasa C
 
@@ -210,7 +210,7 @@ Dalam contoh di atas, kita menggunakan struktur Node untuk merepresentasikan nod
   <h1>Jobsheet 4</h1>
 </div>
 
-<h2 align="center">Doubly Linked List</h2>
+<h1 align="center">Doubly Linked List</h1>
 
 # Struktur Data Doubly Linked List dalam Bahasa C
 
@@ -306,7 +306,7 @@ Dalam contoh di atas, kita menggunakan struktur Node dengan pointer **prev** dan
   <h1>Jobsheet 5</h1>
 </div>
 
-<h2 align="center">Double and Circular Linked List</h2>
+<h1 align="center">Double and Circular Linked List</h1>
 
 # Konsep Circular Linked List dan Circular Doubly Linked List dalam Bahasa C
 
@@ -382,7 +382,7 @@ struct Node {
   <h1>Jobsheet 6</h1>
 </div>
 
-<h2 align="center">Stack</h2>
+<h1 align="center">Stack</h1>
 
 # Konsep Stack dalam Bahasa C
 
