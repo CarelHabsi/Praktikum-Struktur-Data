@@ -594,6 +594,9 @@ Dalam contoh di atas, kita menggunakan array untuk menyimpan elemen-elemen queue
 ## Konsep Bubble Sort:
 Bubble Sort adalah salah satu algoritma pengurutan sederhana yang bekerja dengan cara membandingkan dua elemen yang bersebelahan dan menukarnya jika mereka berada dalam urutan yang salah. Proses ini diulang terus menerus hingga seluruh daftar terurut.
 
+## Alur Node Linked yang diurut dengan Algoritma Bubble Sort
+![Alur Node Stack]([https://mikirinkode.com/wp-content/uploads/2021/11/bubble-sort-thumbnail.png])
+
 Langkah-langkah:
 
 1. Mulai dari awal daftar.
@@ -629,6 +632,9 @@ void bubbleSort(int arr[], int n) {
 
 ## Konsep Insertion Sort:
 Insertion Sort adalah algoritma pengurutan yang membangun daftar terurut satu per satu dengan cara mengambil satu elemen pada satu waktu dan menempatkannya pada posisi yang benar di antara elemen-elemen yang telah terurut sebelumnya.
+
+## Alur Node Linked List yang diurut dengan Algoritma Insertion Sort
+![Alur Node Stack]([https://th.bing.com/th/id/OIP.OwXl0acSOQWPTsikNPtdqwAAAA?rs=1&pid=ImgDetMain])
 
 Langkah-langkah:
 
