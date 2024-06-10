@@ -18,7 +18,8 @@ Repository ini merupakan arsip pengumpulan tugas saya selama satu semester pada 
 - [Jobsheet 12](#jobsheet-12)
 - [Jobsheet 13](#jobsheet-13)
 
-<div id="jobsheet-1">#Jobsheet 1</div>
+## <div id="jobsheet-1">Jobsheet 1</div>
+<br>
 # Materi Praktikum Struktur Data
 
 ## Pengantar
