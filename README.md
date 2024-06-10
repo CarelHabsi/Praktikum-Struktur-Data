@@ -152,7 +152,7 @@ Linked list dapat dibagi menjadi dua jenis utama:
 2. **Doubly Linked List**: Setiap node memiliki dua pointer, yaitu pointer yang menunjuk ke node sebelumnya dan pointer yang menunjuk ke node berikutnya.
 
 ## Alur Node dalam Linked List
-<img width="300" src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Types-of-Linked-List/types_of_linked_list-singly-linked-list-img1.PNG">
+<img width="800" align="center" src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Types-of-Linked-List/types_of_linked_list-singly-linked-list-img1.PNG">
 
 - Setiap node dalam linked list terdiri dari dua bagian utama: data (nilai yang disimpan) dan pointer (alamat memori node berikutnya).
 - Node pertama disebut sebagai *head* yang menunjuk ke node pertama dalam linked list.
@@ -224,7 +224,7 @@ Setiap node dalam doubly linked list terdiri dari tiga bagian utama:
 3. **Pointer next**: Menunjuk ke node berikutnya dalam linked list.
 
 ## Alur Node dalam Doubly Linked List
-<img width="300" src="https://storage.googleapis.com/kotakode-prod-public/images/6c8785e1-fb53-49f6-a280-4a199a3c17d9-image.png">
+<img width="800" align="center" src="https://storage.googleapis.com/kotakode-prod-public/images/6c8785e1-fb53-49f6-a280-4a199a3c17d9-image.png">
 
 - Setiap node memiliki dua pointer, yaitu pointer prev dan pointer next.
 - Node pertama disebut sebagai *head* yang menunjuk ke node pertama dalam linked list.
@@ -317,7 +317,7 @@ Circular linked list dan circular doubly linked list adalah struktur data linier
 Circular linked list adalah struktur data linier di mana setiap node memiliki pointer yang menunjuk ke node berikutnya, dan node terakhir menunjuk kembali ke node pertama, membentuk lingkaran.
 
 ### Alur Node Circular Linked List
-<img width="300" src="https://slideplayer.info/slide/12700172/76/images/2/Circular+Single+Linked+list+Circular+Double+Linked+list.jpg">
+<img width="800" align="center" src="https://slideplayer.info/slide/12700172/76/images/2/Circular+Single+Linked+list+Circular+Double+Linked+list.jpg">
 
 - Setiap node memiliki satu pointer yang menunjuk ke node berikutnya.
 - Node terakhir (tail) menunjuk kembali ke node pertama (head), membentuk lingkaran.
@@ -396,7 +396,7 @@ Stack terdiri dari tiga operasi utama:
 3. **Peek**: Melihat nilai elemen teratas dari stack tanpa menghapusnya.
 
 ## Alur Node dalam Stack
-<img width="300" src="https://ids.ac.id/wp-content/uploads/2023/04/2-1024x576.jpg">
+<img width="800" align="center" src="https://ids.ac.id/wp-content/uploads/2023/04/2-1024x576.jpg">
 
 - Setiap node dalam stack memiliki dua bagian utama: data (nilai yang disimpan) dan pointer (alamat memori node sebelumnya).
 - Elemen terbaru ditambahkan ke atas stack.
@@ -493,7 +493,7 @@ Queue terdiri dari dua operasi utama:
 2. **Dequeue**: Menghapus elemen dari depan queue.
 
 ## Alur Node dalam Queue
-<img width="300" src="https://cdn.programiz.com/sites/tutorial2program/files/queue.jpg">
+<img width="800" align="center" src="https://cdn.programiz.com/sites/tutorial2program/files/queue.jpg">
 
 - Setiap node dalam queue memiliki dua bagian utama: data (nilai yang disimpan) dan pointer (alamat memori node berikutnya).
 - Elemen baru ditambahkan ke belakang queue.
@@ -595,7 +595,7 @@ Dalam contoh di atas, kita menggunakan array untuk menyimpan elemen-elemen queue
 Bubble Sort adalah salah satu algoritma pengurutan sederhana yang bekerja dengan cara membandingkan dua elemen yang bersebelahan dan menukarnya jika mereka berada dalam urutan yang salah. Proses ini diulang terus menerus hingga seluruh daftar terurut.
 
 ## Alur Node Linked yang diurut dengan Algoritma Bubble Sort
-<img width="300" src="https://mikirinkode.com/wp-content/uploads/2021/11/bubble-sort-thumbnail.png">
+<img width="800" align="center" src="https://mikirinkode.com/wp-content/uploads/2021/11/bubble-sort-thumbnail.png">
 
 Langkah-langkah:
 
@@ -634,7 +634,7 @@ void bubbleSort(int arr[], int n) {
 Insertion Sort adalah algoritma pengurutan yang membangun daftar terurut satu per satu dengan cara mengambil satu elemen pada satu waktu dan menempatkannya pada posisi yang benar di antara elemen-elemen yang telah terurut sebelumnya.
 
 ## Alur Node Linked List yang diurut dengan Algoritma Insertion Sort
-<img width="300" src="https://th.bing.com/th/id/OIP.OwXl0acSOQWPTsikNPtdqwAAAA?rs=1&pid=ImgDetMain">
+<img width="800" align="center" src="https://th.bing.com/th/id/OIP.OwXl0acSOQWPTsikNPtdqwAAAA?rs=1&pid=ImgDetMain">
 
 Langkah-langkah:
 
@@ -701,7 +701,7 @@ Dengan demikian, meskipun kedua algoritma sederhana, Insertion Sort umumnya lebi
 Selection Sort adalah algoritma pengurutan yang bekerja dengan cara membagi daftar menjadi dua bagian: sublist yang terurut dan sublist yang tidak terurut. Algoritma ini secara iteratif memilih elemen terkecil (atau terbesar, tergantung pada urutan yang diinginkan) dari sublist yang tidak terurut dan menempatkannya di akhir sublist yang terurut.
 
 ## Alur Node Selection Sort
-<img width="300" src="https://mikirinkode.com/wp-content/uploads/2021/11/selection-sort-proses-1024x933.png">
+<img width="800" align="center" src="https://mikirinkode.com/wp-content/uploads/2021/11/selection-sort-proses-1024x933.png">
 
 Langkah-langkah:
 
@@ -742,7 +742,7 @@ void selectionSort(int arr[], int n) {
 Merge Sort adalah algoritma pengurutan yang menggunakan pendekatan divide and conquer. Algoritma ini membagi daftar menjadi dua sublist yang lebih kecil, mengurutkan setiap sublist secara rekursif, dan kemudian menggabungkan dua sublist yang terurut untuk menghasilkan daftar yang terurut.
 
 ## Alur Node Merge Sort
-<img width="300" src="https://www.programiz.com/sites/tutorial2program/files/merge-sort-example_0.png">
+<img width="800" align="center" src="https://www.programiz.com/sites/tutorial2program/files/merge-sort-example_0.png">
 
 Langkah-langkah:
 
