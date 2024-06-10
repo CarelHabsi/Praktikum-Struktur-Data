@@ -583,3 +583,108 @@ int main() {
 ```
 
 Dalam contoh di atas, kita menggunakan array untuk menyimpan elemen-elemen queue. Fungsi-fungsi seperti enqueue, dequeue, peek, isEmpty, dan isFull digunakan untuk operasi-operasi dasar pada queue.
+
+<div id="jobsheet-8">
+  <h1>Jobsheet 8</h1>
+</div>
+
+<h1 align="center">Bubble and Insertion Sort</h1>
+
+# Bubble Sort
+## Konsep Bubble Sort:
+Bubble Sort adalah salah satu algoritma pengurutan sederhana yang bekerja dengan cara membandingkan dua elemen yang bersebelahan dan menukarnya jika mereka berada dalam urutan yang salah. Proses ini diulang terus menerus hingga seluruh daftar terurut.
+
+Langkah-langkah:
+
+1. Mulai dari awal daftar.
+2. Bandingkan elemen pertama dengan elemen kedua.
+3. Jika elemen pertama lebih besar dari elemen kedua, tukar mereka.
+4. Pindah ke pasangan elemen berikutnya, bandingkan dan tukar jika perlu.
+5. Ulangi langkah 2-4 hingga mencapai akhir daftar. Ini disebut satu "pass".
+6. Ulangi seluruh proses untuk seluruh daftar hingga tidak ada lagi elemen yang perlu ditukar selama satu pass penuh. Pada titik ini, daftar sudah terurut.
+
+Implementasi dalam C:
+
+```c
+void bubbleSort(int arr[], int n) {
+    for (int i = 0; i < n-1; i++) {
+        for (int j = 0; j < n-i-1; j++) {
+            if (arr[j] > arr[j+1]) {
+                int temp = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = temp;
+            }
+        }
+    }
+}
+```
+
+## Kompleksitas Waktu:
+
+- Terburuk (Worst Case): O(n^2)
+- Rata-rata (Average Case): O(n^2)
+- Terbaik (Best Case): O(n) - ketika daftar sudah terurut
+
+# Insertion Sort
+
+## Konsep Insertion Sort:
+Insertion Sort adalah algoritma pengurutan yang membangun daftar terurut satu per satu dengan cara mengambil satu elemen pada satu waktu dan menempatkannya pada posisi yang benar di antara elemen-elemen yang telah terurut sebelumnya.
+
+Langkah-langkah:
+
+1. Mulai dari elemen kedua dalam daftar (anggap elemen pertama sudah terurut).
+2. Bandingkan elemen ini dengan elemen sebelumnya dan geser elemen yang lebih besar satu posisi ke kanan.
+3. Masukkan elemen yang diambil ke dalam posisi yang benar.
+4. Lanjutkan ke elemen berikutnya dan ulangi proses hingga akhir daftar.
+
+Implementasi dalam C:
+
+```c
+void insertionSort(int arr[], int n) {
+    for (int i = 1; i < n; i++) {
+        int key = arr[i];
+        int j = i - 1;
+
+        // Pindahkan elemen arr[0..i-1], yang lebih besar dari key,
+        // ke satu posisi di depan posisi sekarang
+        while (j >= 0 && arr[j] > key) {
+            arr[j + 1] = arr[j];
+            j = j - 1;
+        }
+        arr[j + 1] = key;
+    }
+}
+```
+
+## Kompleksitas Waktu:
+
+- Terburuk (Worst Case): O(n^2)
+- Rata-rata (Average Case): O(n^2)
+- Terbaik (Best Case): O(n) - ketika daftar sudah terurut
+- Perbandingan Bubble Sort dan Insertion Sort
+
+## Kesederhanaan:
+Keduanya mudah dipahami dan diimplementasikan.
+
+## Kompleksitas Waktu:
+
+Kedua algoritma memiliki kompleksitas waktu rata-rata dan terburuk O(n^2), tetapi Insertion Sort lebih efisien dalam praktik pada daftar kecil atau hampir terurut.
+
+## Stabilitas:
+
+Keduanya adalah algoritma stabil, yaitu elemen dengan nilai yang sama mempertahankan urutan relatif mereka setelah pengurutan.
+
+## Penggunaan Memori:
+
+Kedua algoritma ini adalah in-place, yang berarti mereka tidak memerlukan ruang tambahan yang signifikan.
+
+## Kinerja Terbaik:
+
+Insertion Sort lebih efisien daripada Bubble Sort pada daftar yang hampir terurut.
+Dengan demikian, meskipun kedua algoritma sederhana, Insertion Sort umumnya lebih disukai dibandingkan Bubble Sort, terutama ketika berhadapan dengan daftar yang hampir terurut.
+
+<div id="jobsheet-9">
+  <h1>Jobsheet 9</h1>
+</div>
+
+<h1 align="center">Selection and Merge Sort</h1>
