@@ -18,10 +18,12 @@ Repository ini merupakan arsip pengumpulan tugas saya selama satu semester pada 
 - [Jobsheet 12](#jobsheet-12)
 - [Jobsheet 13](#jobsheet-13)
 
-## <div id="jobsheet-1">Jobsheet 1</div>
+<div id="jobsheet-1">
+  <h1>Jobsheet 1</h1>
+</div>
 <br>
 
-<h1>Materi Praktikum Struktur Data</h1>
+<h2>Materi Praktikum Struktur Data</h2>
 
 ## Pengantar
 Struktur data adalah cara untuk menyimpan, mengatur, dan mengakses data dengan efisien. Dalam praktikum ini, kita akan mempelajari struktur data sederhana seperti array dan record, serta struktur data majemuk seperti Linear (stack, queue, list, multilist) dan Non-Linier (pohon biner dan graph).
