@@ -5,7 +5,7 @@ Repository ini merupakan arsip pengumpulan tugas saya selama satu semester pada 
 
 ## 【 Daftar Jobsheet 】
 
-<table">
+<table>
   <tr>
     <td><a href="#jobsheet-1">Jobsheet 1</a></td>
     <td><a href="#jobsheet-2">Jobsheet 2</a></td>
