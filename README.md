@@ -361,7 +361,7 @@ struct Node {
 
 // Fungsi-fungsi lainnya (seperti insert, delete, dll.) dapat ditambahkan sesuai kebutuhan
 ```
-#### Perbedaan Antara Circular Linked List dan Circular Doubly Linked List
+# Perbedaan Antara Circular Linked List dan Circular Doubly Linked List
 
 # 1. Struktur Node:
 
@@ -667,7 +667,8 @@ void insertionSort(int arr[], int n) {
 - Terburuk (Worst Case): O(n^2)
 - Rata-rata (Average Case): O(n^2)
 - Terbaik (Best Case): O(n) - ketika daftar sudah terurut
-- Perbandingan Bubble Sort dan Insertion Sort
+
+# Perbandingan Bubble Sort dan Insertion Sort
 
 ## Kesederhanaan:
 Keduanya mudah dipahami dan diimplementasikan.
@@ -807,7 +808,8 @@ void mergeSort(int arr[], int l, int r) {
 - Rata-rata (Average Case): O(n log n)
 - Terbaik (Best Case): O(n log n)
 - Konsisten terlepas dari urutan awal daftar
-- Perbandingan Selection Sort dan Merge Sort
+
+# Perbandingan Selection Sort dan Merge Sort
 
 ## Kesederhanaan:
 
@@ -835,3 +837,511 @@ Penggunaan Memori:
 - Selection Sort lebih cocok untuk daftar kecil atau kasus di mana kesederhanaan lebih penting daripada efisiensi.
 
 Dengan demikian, Merge Sort lebih disukai untuk pengurutan yang efisien, terutama untuk daftar besar, sementara Selection Sort mungkin digunakan dalam konteks di mana algoritma yang lebih sederhana lebih diinginkan.
+
+<div id="jobsheet-10">
+  <h1>Jobsheet 10</h1>
+</div>
+
+<h1 align="center">Shell and Quick Sort</h1>
+
+# Shell Sort
+
+## Konsep Shell Sort:
+Shell Sort adalah versi yang lebih baik dari Insertion Sort. Ini bekerja dengan cara membandingkan elemen yang dipisahkan oleh interval tertentu (gap) dan mengurutkannya. Interval (gap) ini secara bertahap dikurangi hingga gap menjadi 1, di mana algoritma berubah menjadi Insertion Sort. Ini membantu dalam mengurangi jumlah pergeseran yang diperlukan oleh Insertion Sort dengan memindahkan elemen ke posisi yang lebih dekat ke tempat tujuan mereka lebih awal dalam algoritma.
+
+Langkah-langkah:
+
+1. Pilih gap awal yang besar, kemudian bagi daftar menjadi sublist yang terdiri dari elemen yang dipisahkan oleh gap tersebut.
+2. Urutkan setiap sublist menggunakan Insertion Sort.
+3. Kurangi gap dan ulangi proses sampai gap menjadi 1.
+4. Pada gap 1, urutkan seluruh daftar menggunakan Insertion Sort.
+
+Implementasi dalam C:
+
+```c
+void shellSort(int arr[], int n) {
+    for (int gap = n / 2; gap > 0; gap /= 2) {
+        for (int i = gap; i < n; i++) {
+            int temp = arr[i];
+            int j;
+            for (j = i; j >= gap && arr[j - gap] > temp; j -= gap) {
+                arr[j] = arr[j - gap];
+            }
+            arr[j] = temp;
+        }
+    }
+}
+```
+## Kompleksitas Waktu:
+
+- Terburuk (Worst Case): Bervariasi, sekitar O(n^2) untuk gap tertentu tetapi bisa lebih baik dengan gap yang lebih optimal.
+- Rata-rata (Average Case): Bervariasi, biasanya sekitar O(n^1.5) hingga O(n^1.25).
+- Terbaik (Best Case): O(n log n) dengan gap yang optimal.
+- Tidak stabil.
+
+# Quick Sort
+
+## Konsep Quick Sort:
+Quick Sort adalah algoritma pengurutan yang menggunakan pendekatan divide and conquer. Algoritma ini memilih elemen sebagai pivot dan membagi daftar menjadi dua sublist: satu dengan elemen yang lebih kecil dari pivot dan satu lagi dengan elemen yang lebih besar dari pivot. Algoritma kemudian secara rekursif mengurutkan sublist tersebut.
+
+Langkah-langkah:
+
+1. Pilih elemen pivot dari daftar.
+2. Pisahkan daftar ke dalam dua sublist: elemen yang lebih kecil dari pivot dan elemen yang lebih besar dari pivot.
+3. Rekursif urutkan kedua sublist.
+4. Gabungkan sublist yang terurut dan pivot menjadi satu daftar terurut.
+
+Implementasi dalam C:
+
+```c
+void swap(int* a, int* b) {
+    int t = *a;
+    *a = *b;
+    *b = t;
+}
+
+int partition(int arr[], int low, int high) {
+    int pivot = arr[high];
+    int i = (low - 1);
+    for (int j = low; j <= high - 1; j++) {
+        if (arr[j] < pivot) {
+            i++;
+            swap(&arr[i], &arr[j]);
+        }
+    }
+    swap(&arr[i + 1], &arr[high]);
+    return (i + 1);
+}
+
+void quickSort(int arr[], int low, int high) {
+    if (low < high) {
+        int pi = partition(arr, low, high);
+        quickSort(arr, low, pi - 1);
+        quickSort(arr, pi + 1, high);
+    }
+}
+```
+## Kompleksitas Waktu:
+
+- Terburuk (Worst Case): O(n^2) terjadi ketika pivot yang dipilih adalah elemen terkecil atau terbesar setiap saat.
+- Rata-rata (Average Case): O(n log n).
+- Terbaik (Best Case): O(n log n).
+- Tidak stabil.
+- Perbandingan Shell Sort dan Quick Sort
+
+## Kesederhanaan:
+
+- Shell Sort lebih mudah dipahami dan diimplementasikan daripada Quick Sort.
+- Quick Sort membutuhkan pemahaman tentang rekursi dan partisi.
+
+## Kompleksitas Waktu:
+
+- Shell Sort memiliki kompleksitas waktu yang bervariasi dan biasanya lebih lambat dibandingkan dengan Quick Sort dalam kasus rata-rata.
+- Quick Sort lebih cepat dalam kasus rata-rata dengan kompleksitas O(n log n).
+
+## Stabilitas:
+
+- Shell Sort tidak stabil.
+- Quick Sort tidak stabil.
+
+## Penggunaan Memori:
+
+- Shell Sort adalah in-place, tidak memerlukan memori tambahan yang signifikan.
+- Quick Sort juga in-place, tetapi memerlukan memori tambahan untuk panggilan rekursif pada stack.
+
+## Kinerja Terbaik:
+
+- Quick Sort lebih efisien untuk daftar besar dengan distribusi elemen yang acak.
+- Shell Sort lebih cocok untuk daftar kecil atau daftar yang sebagian besar sudah terurut.
+
+Shell Sort berguna ketika Anda memerlukan algoritma pengurutan yang sederhana dengan kinerja yang lebih baik daripada Insertion Sort, sedangkan Quick Sort adalah pilihan yang lebih baik untuk pengurutan cepat pada daftar besar dan tidak terurut.
+
+<div id="jobsheet-11">
+  <h1>Jobsheet 11</h1>
+</div>
+
+<h1 align="center">Linear dan Binary Search</h1>
+
+# Linear Search
+
+## Konsep Linear Search:
+Linear Search adalah metode pencarian sederhana yang digunakan untuk menemukan elemen dalam suatu daftar atau array. Algoritma ini bekerja dengan memeriksa setiap elemen dalam daftar satu per satu, mulai dari elemen pertama hingga elemen terakhir, sampai elemen yang dicari ditemukan atau seluruh daftar telah diperiksa.
+
+Langkah-langkah:
+
+1. Mulai dari elemen pertama dalam daftar.
+2. Bandingkan elemen saat ini dengan elemen yang dicari.
+3. Jika elemen yang dicari ditemukan, pencarian selesai.
+4. Jika elemen yang dicari tidak ditemukan, pindah ke elemen berikutnya dan ulangi langkah 2 dan 3.
+5. Jika seluruh daftar telah diperiksa dan elemen yang dicari tidak ditemukan, pencarian gagal.
+
+## Implementasi dalam C:
+
+```c
+int linearSearch(int arr[], int n, int x) {
+    for (int i = 0; i < n; i++) {
+        if (arr[i] == x) {
+            return i;  // Elemen ditemukan, kembalikan indeks
+        }
+    }
+    return -1;  // Elemen tidak ditemukan
+}
+```
+## Kompleksitas Waktu:
+
+- Terburuk (Worst Case): O(n), ketika elemen yang dicari berada di posisi terakhir atau tidak ada dalam daftar.
+- Rata-rata (Average Case): O(n).
+- Terbaik (Best Case): O(1), ketika elemen yang dicari berada di posisi pertama.
+- Keuntungan: Sangat sederhana dan tidak memerlukan daftar yang terurut.
+- Kerugian: Tidak efisien untuk daftar besar.
+
+# Binary Search
+
+## Konsep Binary Search:
+Binary Search adalah metode pencarian yang lebih efisien dibandingkan dengan Linear Search, tetapi memerlukan daftar yang terurut. Algoritma ini bekerja dengan membagi daftar menjadi dua bagian yang lebih kecil, dan membandingkan elemen tengah daftar dengan elemen yang dicari. Jika elemen yang dicari lebih kecil dari elemen tengah, pencarian dilanjutkan di bagian kiri; jika lebih besar, pencarian dilanjutkan di bagian kanan.
+
+Langkah-langkah:
+
+1. Mulai dengan seluruh daftar.
+2. Temukan elemen tengah daftar.
+3. Bandingkan elemen tengah dengan elemen yang dicari.
+4. Jika elemen yang dicari sama dengan elemen tengah, pencarian selesai.
+5. Jika elemen yang dicari lebih kecil dari elemen tengah, ulangi langkah 1-4 pada bagian kiri daftar.
+6. Jika elemen yang dicari lebih besar dari elemen tengah, ulangi langkah 1-4 pada bagian kanan daftar.
+7. Ulangi sampai elemen yang dicari ditemukan atau daftar tidak lagi dapat dibagi.
+
+Implementasi dalam C:
+
+```c
+int binarySearch(int arr[], int l, int r, int x) {
+    while (l <= r) {
+        int m = l + (r - l) / 2;  // Temukan elemen tengah
+
+        // Jika elemen yang dicari berada di tengah
+        if (arr[m] == x) {
+            return m;
+        }
+
+        // Jika elemen yang dicari lebih kecil dari elemen tengah
+        if (arr[m] > x) {
+            r = m - 1;
+        }
+        // Jika elemen yang dicari lebih besar dari elemen tengah
+        else {
+            l = m + 1;
+        }
+    }
+    return -1;  // Elemen tidak ditemukan
+}
+```
+## Kompleksitas Waktu:
+
+- Terburuk (Worst Case): O(log n), karena daftar dibagi menjadi dua setiap kali.
+- Rata-rata (Average Case): O(log n).
+- Terbaik (Best Case): O(1), ketika elemen yang dicari berada di posisi tengah awal.
+- Keuntungan: Sangat efisien untuk daftar besar yang sudah terurut.
+- Kerugian: Memerlukan daftar yang terurut, sehingga mungkin memerlukan waktu tambahan untuk mengurutkan daftar sebelum pencarian.
+
+# Perbandingan Linear Search dan Binary Search
+
+## Kesederhanaan:
+
+- Linear Search sangat sederhana dan mudah diimplementasikan.
+- Binary Search lebih kompleks dan memerlukan pemahaman tentang pembagian dan rekursi atau iterasi.
+
+## Efisiensi:
+
+- Linear Search tidak efisien untuk daftar besar, dengan kompleksitas waktu O(n).
+- Binary Search sangat efisien untuk daftar besar yang terurut, dengan kompleksitas waktu O(log n).
+
+## Kondisi Daftar:
+
+- Linear Search dapat digunakan pada daftar yang tidak terurut.
+- Binary Search hanya dapat digunakan pada daftar yang terurut.
+
+## Aplikasi:
+
+- Linear Search lebih cocok untuk daftar kecil atau pencarian sekali-sekali.
+- Binary Search lebih cocok untuk daftar besar yang sering dicari.
+
+Linear Search adalah pilihan yang lebih sederhana untuk daftar kecil atau yang tidak terurut, sementara Binary -Search adalah pilihan yang lebih efisien untuk daftar besar yang sudah terurut.
+
+<div id="jobsheet-12">
+  <h1>Jobsheet 12</h1>
+</div>
+
+<h1 align="center">Tree</h1>
+
+# Konsep Pohon (Tree)
+
+## Definisi Pohon:
+Pohon adalah struktur data hierarkis yang terdiri dari simpul (node) yang terhubung oleh tepi (edge). Setiap pohon memiliki simpul akar (root) yang menjadi titik awal, dan setiap simpul dapat memiliki anak (child) yang merupakan sub-pohon dari simpul tersebut.
+
+## Terminologi Pohon:
+
+- Akar (Root): Simpul paling atas dari pohon. Dalam struktur data pohon, hanya ada satu akar.
+- Simpul (Node): Elemen dari pohon yang dapat memiliki anak dan satu induk (kecuali akar).
+- Tepi (Edge): Hubungan antara dua simpul dalam pohon.
+- Daun (Leaf): Simpul yang tidak memiliki anak, terletak di bagian bawah pohon.
+- Tingkat (Level): Kedalaman simpul dalam pohon, akar berada di tingkat 0.
+- Tinggi Pohon (Height of Tree): Jarak maksimum dari akar ke daun terjauh.
+- Sub-pohon (Subtree): Pohon yang merupakan bagian dari pohon yang lebih besar.
+- Induk (Parent): Simpul yang memiliki satu atau lebih anak.
+- Anak (Child): Simpul yang merupakan hasil langsung dari induknya.
+- Saudara (Sibling): Simpul-simpul yang memiliki induk yang sama.
+
+## Jenis-jenis Pohon:
+
+- Pohon Biner (Binary Tree): Pohon di mana setiap simpul memiliki paling banyak dua anak, yaitu anak kiri dan anak kanan.
+- Pohon Biner Pencarian (Binary Search Tree, BST): Pohon biner yang mematuhi sifat pencarian biner, yaitu nilai di simpul kiri lebih kecil dari nilai di simpul induk, dan nilai di simpul kanan lebih besar dari nilai di simpul induk.
+- Pohon AVL: Pohon biner pencarian yang diatur agar tetap seimbang tinggi dengan memastikan perbedaan tinggi antara sub-pohon kiri dan kanan tidak lebih dari satu.
+- Heap: Pohon biner lengkap yang memenuhi sifat heap, di mana setiap simpul induk lebih besar (max-heap) atau lebih kecil (min-heap) dari anak-anaknya.
+- Pohon Merah-Hitam (Red-Black Tree): Pohon biner pencarian yang memiliki properti tambahan untuk memastikan keseimbangan tinggi, di mana setiap simpul memiliki warna merah atau hitam dan mematuhi aturan warna tertentu.
+- Trie: Pohon yang digunakan untuk pencarian string, di mana setiap simpul mewakili karakter dari string.
+
+## Operasi Dasar pada Pohon:
+
+1. Penelusuran (Traversal): Proses mengunjungi setiap simpul dalam pohon.
+- Pre-order Traversal: Kunjungi simpul induk terlebih dahulu, lalu sub-pohon kiri, kemudian sub-pohon kanan.
+- In-order Traversal: Kunjungi sub-pohon kiri terlebih dahulu, lalu simpul induk, kemudian sub-pohon kanan.
+- Post-order Traversal: Kunjungi sub-pohon kiri terlebih dahulu, lalu sub-pohon kanan, kemudian simpul induk.
+- Level-order Traversal: Kunjungi simpul-simpul berdasarkan tingkatnya, mulai dari akar ke daun.
+
+2. Penyisipan (Insertion): Menambahkan simpul baru ke pohon sesuai dengan aturan pohon yang digunakan (misalnya, BST, AVL).
+
+3. Penghapusan (Deletion): Menghapus simpul dari pohon dan memastikan pohon tetap memenuhi aturan yang berlaku.
+
+4. Pencarian (Search): Mencari simpul dengan nilai tertentu dalam pohon.
+
+Implementasi Dasar Pohon Biner dalam C:
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+// Definisi struktur simpul pohon biner
+typedef struct Node {
+    int data;
+    struct Node *left, *right;
+} Node;
+
+// Fungsi untuk membuat simpul baru
+Node* newNode(int data) {
+    Node* node = (Node*)malloc(sizeof(Node));
+    node->data = data;
+    node->left = node->right = NULL;
+    return node;
+}
+
+// Fungsi untuk penyisipan simpul baru dalam BST
+Node* insert(Node* node, int data) {
+    if (node == NULL) return newNode(data);
+
+    if (data < node->data) {
+        node->left = insert(node->left, data);
+    } else if (data > node->data) {
+        node->right = insert(node->right, data);
+    }
+
+    return node;
+}
+
+// Fungsi untuk penelusuran in-order
+void inOrderTraversal(Node* root) {
+    if (root != NULL) {
+        inOrderTraversal(root->left);
+        printf("%d ", root->data);
+        inOrderTraversal(root->right);
+    }
+}
+
+int main() {
+    Node* root = NULL;
+    root = insert(root, 50);
+    insert(root, 30);
+    insert(root, 20);
+    insert(root, 40);
+    insert(root, 70);
+    insert(root, 60);
+    insert(root, 80);
+
+    printf("In-order traversal of the given tree: ");
+    inOrderTraversal(root);
+
+    return 0;
+}
+```
+## Kesimpulan
+Pohon adalah struktur data yang sangat berguna dalam berbagai aplikasi komputasi karena sifat hierarkisnya dan kemampuan untuk menangani data secara efisien. Beberapa aplikasi umum dari pohon termasuk basis data, jaringan komputer, dan kompresi data. Pemahaman tentang pohon dan berbagai jenis serta operasinya sangat penting bagi pengembang perangkat lunak dan ilmuwan komputer.
+
+<div id="jobsheet-13">
+  <h1>Jobsheet 13</h1>
+</div>
+
+<h1 align="center">Breadht First Search and Depth First Search</h1>
+
+# Konsep Graf
+Graf adalah struktur data yang terdiri dari simpul (nodes) dan tepi (edges) yang menghubungkan pasangan simpul. Graf digunakan untuk merepresentasikan banyak jenis hubungan dan proses di dunia nyata, seperti jaringan jalan, hubungan sosial, jaringan komputer, dan lain-lain.
+
+## Terminologi Graf
+- Simpul (Node/Vertex): Titik dalam graf.
+- Tepi (Edge): Hubungan antara dua simpul dalam graf.
+- Graf Berarah (Directed Graph/Digraph): Graf di mana tepi memiliki arah.
+- Graf Tak Berarah (Undirected Graph): Graf di mana tepi tidak memiliki arah.
+- Graf Berbobot (Weighted Graph): Graf di mana setiap tepi memiliki nilai bobot.
+- Lintasan (Path): Urutan simpul yang terhubung oleh tepi.
+- Siklus (Cycle): Lintasan yang berawal dan berakhir di simpul yang sama.
+- Graf Terhubung (Connected Graph): Graf di mana ada lintasan antara setiap pasangan simpul.
+- Graf Tak Terhubung (Disconnected Graph): Graf yang tidak memenuhi kondisi di atas.
+- Derajat (Degree): Jumlah tepi yang terhubung dengan sebuah simpul.
+
+## Breadth First Search (BFS)
+
+Breadth First Search (BFS) adalah algoritma penelusuran graf yang dimulai dari simpul awal dan mengeksplorasi semua simpul tetangga di tingkat saat ini sebelum pindah ke simpul tingkat berikutnya. BFS menggunakan struktur data antrian (queue).
+
+## Proses BFS:
+
+1. Mulai dari simpul awal dan tandai sebagai terkunjungi.
+2. Masukkan simpul awal ke dalam antrian.
+3. Selama antrian tidak kosong:
+- Ambil simpul dari antrian.
+- Untuk setiap tetangga simpul tersebut, jika belum dikunjungi, tandai sebagai terkunjungi dan masukkan ke dalam antrian.
+
+Implementasi BFS dalam C:
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+#define MAX 100
+
+int queue[MAX], front = -1, rear = -1;
+int visited[MAX] = {0};
+int adjMatrix[MAX][MAX];
+int n;  // Jumlah simpul
+
+void enqueue(int v) {
+    if (rear == MAX - 1) {
+        printf("Queue penuh\n");
+        return;
+    }
+    if (front == -1) front = 0;
+    queue[++rear] = v;
+}
+
+int dequeue() {
+    if (front == -1 || front > rear) {
+        printf("Queue kosong\n");
+        return -1;
+    }
+    return queue[front++];
+}
+
+void BFS(int startVertex) {
+    visited[startVertex] = 1;
+    enqueue(startVertex);
+
+    while (front <= rear) {
+        int currentVertex = dequeue();
+        printf("Visited %d\n", currentVertex);
+
+        for (int i = 0; i < n; i++) {
+            if (adjMatrix[currentVertex][i] == 1 && !visited[i]) {
+                visited[i] = 1;
+                enqueue(i);
+            }
+        }
+    }
+}
+
+int main() {
+    n = 6;  // Misalnya, jumlah simpul adalah 6
+    // Matriks ketetanggaan untuk graf
+    int adjMatrixExample[6][6] = {
+        {0, 1, 1, 0, 0, 0},
+        {1, 0, 1, 1, 1, 0},
+        {1, 1, 0, 0, 1, 0},
+        {0, 1, 0, 0, 1, 1},
+        {0, 1, 1, 1, 0, 1},
+        {0, 0, 0, 1, 1, 0}
+    };
+
+    // Copy data ke adjMatrix
+    for (int i = 0; i < n; i++)
+        for (int j = 0; j < n; j++)
+            adjMatrix[i][j] = adjMatrixExample[i][j];
+
+    BFS(0);  // Mulai BFS dari simpul 0
+
+    return 0;
+}
+```
+# Depth First Search (DFS)
+Depth First Search (DFS) adalah algoritma penelusuran graf yang dimulai dari simpul awal dan mengeksplorasi sedalam mungkin di setiap cabang sebelum kembali. DFS menggunakan struktur data tumpukan (stack) atau rekursi.
+
+## Proses DFS:
+
+1. Mulai dari simpul awal dan tandai sebagai terkunjungi.
+2. Untuk setiap tetangga simpul tersebut:
+- Jika tetangga belum dikunjungi, panggil DFS secara rekursif pada tetangga tersebut.
+
+Implementasi DFS dalam C:
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int visited[MAX] = {0};
+int adjMatrix[MAX][MAX];
+int n;  // Jumlah simpul
+
+void DFS(int vertex) {
+    visited[vertex] = 1;
+    printf("Visited %d\n", vertex);
+
+    for (int i = 0; i < n; i++) {
+        if (adjMatrix[vertex][i] == 1 && !visited[i]) {
+            DFS(i);
+        }
+    }
+}
+
+int main() {
+    n = 6;  // Misalnya, jumlah simpul adalah 6
+    // Matriks ketetanggaan untuk graf
+    int adjMatrixExample[6][6] = {
+        {0, 1, 1, 0, 0, 0},
+        {1, 0, 1, 1, 1, 0},
+        {1, 1, 0, 0, 1, 0},
+        {0, 1, 0, 0, 1, 1},
+        {0, 1, 1, 1, 0, 1},
+        {0, 0, 0, 1, 1, 0}
+    };
+
+    // Copy data ke adjMatrix
+    for (int i = 0; i < n; i++)
+        for (int j = 0; j < n; j++)
+            adjMatrix[i][j] = adjMatrixExample[i][j];
+
+    DFS(0);  // Mulai DFS dari simpul 0
+
+    return 0;
+}
+```
+
+# Perbandingan BFS dan DFS
+
+## BFS:
+
+- Menggunakan antrian (queue).
+- Baik untuk menemukan lintasan terpendek dalam graf tidak berbobot.
+- Mengeksplorasi semua tetangga di setiap tingkat sebelum pindah ke tingkat berikutnya.
+
+## DFS:
+
+- Menggunakan tumpukan (stack) atau rekursi.
+- Baik untuk mengeksplorasi sedalam mungkin dalam graf.
+- Dapat terjebak dalam siklus jika graf mengandung siklus dan tidak ditangani dengan baik.
+
+## Kesimpulan
+Graf adalah struktur data penting yang digunakan untuk merepresentasikan berbagai hubungan dan proses dalam dunia nyata. BFS dan DFS adalah dua algoritma dasar untuk penelusuran graf yang masing-masing memiliki keunggulan dan kegunaan tergantung pada aplikasi yang diinginkan. Pemahaman mendalam tentang graf dan algoritma penelusurannya sangat penting bagi pengembang perangkat lunak dan ilmuwan komputer.
