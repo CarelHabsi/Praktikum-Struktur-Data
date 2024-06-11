@@ -5,27 +5,27 @@ Repository ini merupakan arsip pengumpulan tugas saya selama satu semester pada 
 
 ## 【 Daftar Jobsheet 】
 
-<table style="border-collapse: collapse; width: 100%;">
+<table">
   <tr>
-    <td style="border: none;"><a href="#jobsheet-1">Jobsheet 1</a></td>
-    <td style="border: none;"><a href="#jobsheet-2">Jobsheet 2</a></td>
-    <td style="border: none;"><a href="#jobsheet-3">Jobsheet 3</a></td>
-    <td style="border: none;"><a href="#jobsheet-4">Jobsheet 4</a></td>
+    <td><a href="#jobsheet-1">Jobsheet 1</a></td>
+    <td><a href="#jobsheet-2">Jobsheet 2</a></td>
+    <td><a href="#jobsheet-3">Jobsheet 3</a></td>
+    <td><a href="#jobsheet-4">Jobsheet 4</a></td>
   </tr>
   <tr>
-    <td style="border: none;"><a href="#jobsheet-5">Jobsheet 5</a></td>
-    <td style="border: none;"><a href="#jobsheet-6">Jobsheet 6</a></td>
-     <td style="border: none;"><a href="#jobsheet-7">Jobsheet 7</a></td>
-    <td style="border: none;"><a href="#jobsheet-8">Jobsheet 8</a></td>
+    <td><a href="#jobsheet-5">Jobsheet 5</a></td>
+    <td><a href="#jobsheet-6">Jobsheet 6</a></td>
+     <td><a href="#jobsheet-7">Jobsheet 7</a></td>
+    <td><a href="#jobsheet-8">Jobsheet 8</a></td>
   </tr>
   <tr>
-    <td style="border: none;"><a href="#jobsheet-9">Jobsheet 9</a></td>
-    <td style="border: none;"><a href="#jobsheet-10">Jobsheet 10</a></td>
-    <td style="border: none;"><a href="#jobsheet-11">Jobsheet 11</a></td>
-    <td style="border: none;"><a href="#jobsheet-12">Jobsheet 12</a></td>
+    <td><a href="#jobsheet-9">Jobsheet 9</a></td>
+    <td><a href="#jobsheet-10">Jobsheet 10</a></td>
+    <td><a href="#jobsheet-11">Jobsheet 11</a></td>
+    <td><a href="#jobsheet-12">Jobsheet 12</a></td>
   </tr>
   <tr>
-    <td style="border: none;"><a href="#jobsheet-13">Jobsheet 13</a></td>
+    <td><a href="#jobsheet-13">Jobsheet 13</a></td>
   </tr>
 </table>
 
