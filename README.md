@@ -1178,7 +1178,7 @@ Pohon adalah struktur data yang sangat berguna dalam berbagai aplikasi komputasi
   <h1>Jobsheet 13</h1>
 </div>
 
-<h1 align="center">Breadht First Search and Depth First Search</h1>
+<h1 align="center">Graph - Breadht First Search and Depth First Search</h1>
 
 # Konsep Graf
 Graf adalah struktur data yang terdiri dari simpul (nodes) dan tepi (edges) yang menghubungkan pasangan simpul. Graf digunakan untuk merepresentasikan banyak jenis hubungan dan proses di dunia nyata, seperti jaringan jalan, hubungan sosial, jaringan komputer, dan lain-lain.
