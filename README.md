@@ -4,19 +4,13 @@
 Repository ini merupakan arsip pengumpulan tugas saya selama satu semester pada matakuliah Praktikum Struktur Data yang dibimbing oleh dosen kami yakni Randi Proska Sandra, S.Pd, M.Sc. Tugas pada repository ini diperuntukkan mahasiswa Informatika agar memahami konsep struktur data pada pemrograman terkhusus pada pemrograman bahasa C.
 
 ## 【 Daftar Jobsheet 】
-- [Jobsheet 1](#jobsheet-1)
-- [Jobsheet 2](#jobsheet-2)
-- [Jobsheet 3](#jobsheet-3)
-- [Jobsheet 4](#jobsheet-4)
-- [Jobsheet 5](#jobsheet-5)
-- [Jobsheet 6](#jobsheet-6)
-- [Jobsheet 7](#jobsheet-7)
-- [Jobsheet 8](#jobsheet-8)
-- [Jobsheet 9](#jobsheet-9)
-- [Jobsheet 10](#jobsheet-10)
-- [Jobsheet 11](#jobsheet-11)
-- [Jobsheet 12](#jobsheet-12)
-- [Jobsheet 13](#jobsheet-13)
+
+| [Jobsheet 1](#jobsheet-1) | [Jobsheet 2](#jobsheet-2) | [Jobsheet 3](#jobsheet-3) |
+| [Jobsheet 4](#jobsheet-4)  | [Jobsheet 5](#jobsheet-5) | [Jobsheet 6](#jobsheet-6) |
+| [Jobsheet 7](#jobsheet-7)  | [Jobsheet 8](#jobsheet-8) | [Jobsheet 9](#jobsheet-9) |
+| [Jobsheet 10](#jobsheet-10)| [Jobsheet 11](#jobsheet-11)| [Jobsheet 12](#jobsheet-12)|
+| [Jobsheet 13](#jobsheet-13)|
+
 
 <div id="jobsheet-1">
   <h1>Jobsheet 1</h1>
