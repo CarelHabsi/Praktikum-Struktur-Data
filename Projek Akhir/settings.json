@@ -1,0 +1,12 @@
+{
+    "code-runner.runInTerminal": true,
+    "editor.minimap.enabled": false,
+    "cmake.configureOnOpen": true,
+    "window.menuBarVisibility": "compact",
+    "C_Cpp.default.compilerPath": "c:\\Users\\LENOVO\\Desktop\\projectAkhir\\projekAkhir_tenggatTugas.c",
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "github.copilot.editor.enableAutoCompletions": true,
+    "editor.fontFamily": "Courier New",
+    "editor.fontSize": 10,
+    "editor.fontLigatures": false
+}

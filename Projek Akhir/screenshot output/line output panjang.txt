@@ -1,0 +1,500 @@
+Nama : Carel Habsian Osagi
+NIM  : 23343061
+Prodi: S1 Informatika (NK)
+
+Manajemen Pengumpulan Tugas
+1. Tambah Tugas
+2. Edit Tugas
+3. Hapus Tugas
+4. Tampilkan Semua Tugas
+5. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Naik) 
+6. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Turun)
+7. Cari Tugas Berdasarkan Nama
+8. Keluar
+Pilih opsi: 1
+Masukkan nama tugas (atau -1 untuk berhenti): Bahasa Indonesia
+Masukkan tenggat (dd-mm-yyyy): 23-06-2025
+Masukkan nama tugas (atau -1 untuk berhenti): Inggris
+Masukkan tenggat (dd-mm-yyyy): 25-06-2024
+Masukkan nama tugas (atau -1 untuk berhenti): -1
+Manajemen Pengumpulan Tugas
+1. Tambah Tugas
+2. Edit Tugas
+3. Hapus Tugas
+4. Tampilkan Semua Tugas
+5. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Naik) 
+6. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Turun)
+7. Cari Tugas Berdasarkan Nama
+8. Keluar
+Pilih opsi: 4
+1. Nama: Bahasa Indonesia, Tenggat: 23-06-2025
+2. Nama: Inggris, Tenggat: 25-06-2024
+Manajemen Pengumpulan Tugas
+1. Tambah Tugas
+2. Edit Tugas
+3. Hapus Tugas
+4. Tampilkan Semua Tugas
+5. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Naik)
+6. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Turun)
+7. Cari Tugas Berdasarkan Nama
+8. Keluar
+Pilih opsi: 7
+Masukkan nama tugas yang ingin dicari: Bahasa Indonesia
+Tugas ditemukan: Nama: Bahasa Indonesia, Tenggat: 23-06-2025
+Manajemen Pengumpulan Tugas
+1. Tambah Tugas
+2. Edit Tugas
+3. Hapus Tugas
+4. Tampilkan Semua Tugas
+5. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Naik)
+6. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Turun)
+7. Cari Tugas Berdasarkan Nama
+8. Keluar
+Pilih opsi: 1
+Masukkan nama tugas (atau -1 untuk berhenti): Struktur Data
+Masukkan tenggat (dd-mm-yyyy): 11-05-2024
+Masukkan nama tugas (atau -1 untuk berhenti): -1
+Manajemen Pengumpulan Tugas
+1. Tambah Tugas
+2. Edit Tugas
+3. Hapus Tugas
+4. Tampilkan Semua Tugas
+5. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Naik)
+6. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Turun)
+7. Cari Tugas Berdasarkan Nama
+8. Keluar
+Pilih opsi: 4
+1. Nama: Bahasa Indonesia, Tenggat: 23-06-2025
+2. Nama: Inggris, Tenggat: 25-06-2024
+3. Nama: Struktur Data, Tenggat: 11-05-2024
+Manajemen Pengumpulan Tugas
+1. Tambah Tugas
+2. Edit Tugas
+3. Hapus Tugas
+4. Tampilkan Semua Tugas
+5. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Naik)
+6. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Turun)
+7. Cari Tugas Berdasarkan Nama
+8. Keluar
+Pilih opsi: 1
+Masukkan nama tugas (atau -1 untuk berhenti): Sistem Digital
+Masukkan tenggat (dd-mm-yyyy): 15-01-2026
+Masukkan nama tugas (atau -1 untuk berhenti): -1
+Manajemen Pengumpulan Tugas
+1. Tambah Tugas
+2. Edit Tugas
+3. Hapus Tugas
+4. Tampilkan Semua Tugas
+5. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Naik)
+6. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Turun)
+7. Cari Tugas Berdasarkan Nama
+8. Keluar
+Pilih opsi: 4
+1. Nama: Bahasa Indonesia, Tenggat: 23-06-2025
+2. Nama: Inggris, Tenggat: 25-06-2024
+3. Nama: Struktur Data, Tenggat: 11-05-2024
+4. Nama: Sistem Digital, Tenggat: 15-01-2026
+Manajemen Pengumpulan Tugas
+1. Tambah Tugas
+2. Edit Tugas
+3. Hapus Tugas
+4. Tampilkan Semua Tugas
+5. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Naik)
+6. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Turun)
+7. Cari Tugas Berdasarkan Nama
+8. Keluar
+Pilih opsi: 7
+Masukkan nama tugas yang ingin dicari: Inggris
+Tugas ditemukan: Nama: Inggris, Tenggat: 25-06-2024
+Manajemen Pengumpulan Tugas
+1. Tambah Tugas
+2. Edit Tugas
+3. Hapus Tugas
+4. Tampilkan Semua Tugas
+5. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Naik)
+6. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Turun)
+7. Cari Tugas Berdasarkan Nama
+8. Keluar
+Pilih opsi: 5
+Tugas telah diurutkan secara ascending berdasarkan tenggat pengumpulan.
+Manajemen Pengumpulan Tugas
+1. Tambah Tugas
+2. Edit Tugas
+3. Hapus Tugas
+4. Tampilkan Semua Tugas
+5. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Naik)
+6. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Turun)
+7. Cari Tugas Berdasarkan Nama
+8. Keluar
+Pilih opsi: 4
+1. Nama: Struktur Data, Tenggat: 11-05-2024
+2. Nama: Inggris, Tenggat: 25-06-2024
+3. Nama: Bahasa Indonesia, Tenggat: 23-06-2025
+4. Nama: Sistem Digital, Tenggat: 15-01-2026
+Manajemen Pengumpulan Tugas
+1. Tambah Tugas
+2. Edit Tugas
+3. Hapus Tugas
+4. Tampilkan Semua Tugas
+5. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Naik)
+6. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Turun)
+7. Cari Tugas Berdasarkan Nama
+8. Keluar
+Pilih opsi: 7
+Masukkan nama tugas yang ingin dicari: Bahasa Indonesia
+Tugas ditemukan: Nama: Bahasa Indonesia, Tenggat: 23-06-2025
+Manajemen Pengumpulan Tugas
+1. Tambah Tugas
+2. Edit Tugas
+3. Hapus Tugas
+4. Tampilkan Semua Tugas
+5. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Naik)
+6. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Turun)
+7. Cari Tugas Berdasarkan Nama
+8. Keluar
+Pilih opsi: 7
+Masukkan nama tugas yang ingin dicari: Inggris
+Tugas ditemukan: Nama: Inggris, Tenggat: 25-06-2024
+Manajemen Pengumpulan Tugas
+1. Tambah Tugas
+2. Edit Tugas
+3. Hapus Tugas
+4. Tampilkan Semua Tugas
+5. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Naik)
+6. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Turun)
+7. Cari Tugas Berdasarkan Nama
+8. Keluar
+Pilih opsi: 1
+Masukkan nama tugas (atau -1 untuk berhenti): Algo
+Masukkan tenggat (dd-mm-yyyy): 22-02-2022
+Masukkan nama tugas (atau -1 untuk berhenti): -1
+Manajemen Pengumpulan Tugas
+1. Tambah Tugas
+2. Edit Tugas
+3. Hapus Tugas
+4. Tampilkan Semua Tugas
+5. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Naik)
+6. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Turun)
+7. Cari Tugas Berdasarkan Nama
+8. Keluar
+Pilih opsi: 4
+1. Nama: Struktur Data, Tenggat: 11-05-2024
+2. Nama: Inggris, Tenggat: 25-06-2024
+3. Nama: Bahasa Indonesia, Tenggat: 23-06-2025
+4. Nama: Sistem Digital, Tenggat: 15-01-2026
+5. Nama: Algo, Tenggat: 22-02-2022
+Manajemen Pengumpulan Tugas
+1. Tambah Tugas
+2. Edit Tugas
+3. Hapus Tugas
+4. Tampilkan Semua Tugas
+5. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Naik)
+6. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Turun)
+7. Cari Tugas Berdasarkan Nama
+8. Keluar
+Pilih opsi: 7
+Masukkan nama tugas yang ingin dicari: algo
+Tugas tidak ditemukan.
+Manajemen Pengumpulan Tugas
+1. Tambah Tugas
+2. Edit Tugas
+3. Hapus Tugas
+4. Tampilkan Semua Tugas
+5. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Naik)
+6. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Turun)
+7. Cari Tugas Berdasarkan Nama
+8. Keluar
+Pilih opsi: 7 
+Masukkan nama tugas yang ingin dicari: Algo
+Tugas ditemukan: Nama: Algo, Tenggat: 22-02-2022
+Manajemen Pengumpulan Tugas
+1. Tambah Tugas
+2. Edit Tugas
+3. Hapus Tugas
+4. Tampilkan Semua Tugas
+5. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Naik)
+6. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Turun)
+7. Cari Tugas Berdasarkan Nama
+8. Keluar
+Pilih opsi: 6
+Tugas telah diurutkan secara descending berdasarkan tenggat pengumpulan.
+Manajemen Pengumpulan Tugas
+1. Tambah Tugas
+2. Edit Tugas
+3. Hapus Tugas
+4. Tampilkan Semua Tugas
+5. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Naik)
+6. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Turun)
+7. Cari Tugas Berdasarkan Nama
+8. Keluar
+Pilih opsi: 7
+Masukkan nama tugas yang ingin dicari: Algo
+Tugas ditemukan: Nama: Algo, Tenggat: 22-02-2022
+Manajemen Pengumpulan Tugas
+1. Tambah Tugas
+2. Edit Tugas
+3. Hapus Tugas
+4. Tampilkan Semua Tugas
+5. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Naik)
+6. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Turun)
+7. Cari Tugas Berdasarkan Nama
+8. Keluar
+Pilih opsi: 2
+Masukkan nama tugas yang ingin diedit: Algo
+Masukkan nama tugas baru: Algoritma
+Masukkan tenggat baru (dd-mm-yyyy): 24-06-2024
+Manajemen Pengumpulan Tugas
+1. Tambah Tugas
+2. Edit Tugas
+3. Hapus Tugas
+4. Tampilkan Semua Tugas
+5. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Naik)
+6. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Turun)
+7. Cari Tugas Berdasarkan Nama
+8. Keluar
+Pilih opsi: 4
+1. Nama: Sistem Digital, Tenggat: 15-01-2026
+2. Nama: Bahasa Indonesia, Tenggat: 23-06-2025
+3. Nama: Inggris, Tenggat: 25-06-2024
+4. Nama: Struktur Data, Tenggat: 11-05-2024
+5. Nama: Algoritma, Tenggat: 24-06-2024
+Manajemen Pengumpulan Tugas
+1. Tambah Tugas
+2. Edit Tugas
+3. Hapus Tugas
+4. Tampilkan Semua Tugas
+5. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Naik)
+6. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Turun)
+7. Cari Tugas Berdasarkan Nama
+8. Keluar
+Pilih opsi: 7
+Masukkan nama tugas yang ingin dicari: Algo
+Tugas tidak ditemukan.
+Manajemen Pengumpulan Tugas
+1. Tambah Tugas
+2. Edit Tugas
+3. Hapus Tugas
+4. Tampilkan Semua Tugas
+5. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Naik)
+6. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Turun)
+7. Cari Tugas Berdasarkan Nama
+8. Keluar
+Pilih opsi: 7
+Masukkan nama tugas yang ingin dicari: Algoritma
+Tugas ditemukan: Nama: Algoritma, Tenggat: 24-06-2024
+Manajemen Pengumpulan Tugas
+1. Tambah Tugas
+2. Edit Tugas
+3. Hapus Tugas
+4. Tampilkan Semua Tugas
+5. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Naik)
+6. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Turun)
+7. Cari Tugas Berdasarkan Nama
+8. Keluar
+Pilih opsi: 7
+Masukkan nama tugas yang ingin dicari: Bahasa Indonesia
+Tugas ditemukan: Nama: Bahasa Indonesia, Tenggat: 23-06-2025
+Manajemen Pengumpulan Tugas
+1. Tambah Tugas
+2. Edit Tugas
+3. Hapus Tugas
+4. Tampilkan Semua Tugas
+5. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Naik)
+6. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Turun)
+7. Cari Tugas Berdasarkan Nama
+8. Keluar
+Pilih opsi: 4
+1. Nama: Sistem Digital, Tenggat: 15-01-2026
+2. Nama: Bahasa Indonesia, Tenggat: 23-06-2025
+3. Nama: Inggris, Tenggat: 25-06-2024
+4. Nama: Struktur Data, Tenggat: 11-05-2024
+5. Nama: Algoritma, Tenggat: 24-06-2024
+Manajemen Pengumpulan Tugas
+1. Tambah Tugas
+2. Edit Tugas
+3. Hapus Tugas
+4. Tampilkan Semua Tugas
+5. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Naik)
+6. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Turun)
+7. Cari Tugas Berdasarkan Nama
+8. Keluar
+Pilih opsi: 5
+Tugas telah diurutkan secara ascending berdasarkan tenggat pengumpulan.
+Manajemen Pengumpulan Tugas
+1. Tambah Tugas
+2. Edit Tugas
+3. Hapus Tugas
+4. Tampilkan Semua Tugas
+5. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Naik)
+6. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Turun)
+7. Cari Tugas Berdasarkan Nama
+8. Keluar
+Pilih opsi: 4
+1. Nama: Struktur Data, Tenggat: 11-05-2024
+2. Nama: Algoritma, Tenggat: 24-06-2024
+3. Nama: Inggris, Tenggat: 25-06-2024
+4. Nama: Bahasa Indonesia, Tenggat: 23-06-2025
+5. Nama: Sistem Digital, Tenggat: 15-01-2026
+Manajemen Pengumpulan Tugas
+1. Tambah Tugas
+2. Edit Tugas
+3. Hapus Tugas
+4. Tampilkan Semua Tugas
+5. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Naik)
+6. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Turun)
+7. Cari Tugas Berdasarkan Nama
+8. Keluar
+Pilih opsi: 7
+Masukkan nama tugas yang ingin dicari: Inggris
+Tugas ditemukan: Nama: Inggris, Tenggat: 25-06-2024
+Manajemen Pengumpulan Tugas
+1. Tambah Tugas
+2. Edit Tugas
+3. Hapus Tugas
+4. Tampilkan Semua Tugas
+5. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Naik)
+6. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Turun)
+7. Cari Tugas Berdasarkan Nama
+8. Keluar
+Pilih opsi: 7
+Masukkan nama tugas yang ingin dicari: Algoritma
+Tugas ditemukan: Nama: Algoritma, Tenggat: 24-06-2024
+Manajemen Pengumpulan Tugas
+1. Tambah Tugas
+2. Edit Tugas
+3. Hapus Tugas
+4. Tampilkan Semua Tugas
+5. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Naik)
+6. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Turun)
+7. Cari Tugas Berdasarkan Nama
+8. Keluar
+Pilih opsi: 7
+Masukkan nama tugas yang ingin dicari: Sistem Digital
+Tugas ditemukan: Nama: Sistem Digital, Tenggat: 15-01-2026
+Manajemen Pengumpulan Tugas
+1. Tambah Tugas
+2. Edit Tugas
+3. Hapus Tugas
+4. Tampilkan Semua Tugas
+5. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Naik)
+6. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Turun)
+7. Cari Tugas Berdasarkan Nama
+8. Keluar
+Pilih opsi: 7
+Masukkan nama tugas yang ingin dicari: Struktur Data
+Tugas ditemukan: Nama: Struktur Data, Tenggat: 11-05-2024
+Manajemen Pengumpulan Tugas
+1. Tambah Tugas
+2. Edit Tugas
+3. Hapus Tugas
+4. Tampilkan Semua Tugas
+5. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Naik)
+6. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Turun)
+7. Cari Tugas Berdasarkan Nama
+8. Keluar
+Pilih opsi: 2
+Masukkan nama tugas yang ingin diedit: Sistem Digital
+Masukkan nama tugas baru: Praktikum Sistem Digital
+Masukkan tenggat baru (dd-mm-yyyy): 25-07-2024
+Manajemen Pengumpulan Tugas
+1. Tambah Tugas
+2. Edit Tugas
+3. Hapus Tugas
+4. Tampilkan Semua Tugas
+5. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Naik)
+6. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Turun)
+7. Cari Tugas Berdasarkan Nama
+8. Keluar
+Pilih opsi: 4
+1. Nama: Struktur Data, Tenggat: 11-05-2024
+2. Nama: Algoritma, Tenggat: 24-06-2024
+3. Nama: Inggris, Tenggat: 25-06-2024
+4. Nama: Bahasa Indonesia, Tenggat: 23-06-2025
+5. Nama: Praktikum Sistem Digital, Tenggat: 25-07-2024
+Manajemen Pengumpulan Tugas
+1. Tambah Tugas
+2. Edit Tugas
+3. Hapus Tugas
+4. Tampilkan Semua Tugas
+5. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Naik)
+6. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Turun)
+7. Cari Tugas Berdasarkan Nama
+8. Keluar
+Pilih opsi: 7
+Masukkan nama tugas yang ingin dicari: Praktikum Sistem Digital
+Tugas ditemukan: Nama: Praktikum Sistem Digital, Tenggat: 25-07-2024
+Manajemen Pengumpulan Tugas
+1. Tambah Tugas
+2. Edit Tugas
+3. Hapus Tugas
+4. Tampilkan Semua Tugas
+5. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Naik)
+6. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Turun)
+7. Cari Tugas Berdasarkan Nama
+8. Keluar
+Pilih opsi: 6
+Tugas telah diurutkan secara descending berdasarkan tenggat pengumpulan.
+Manajemen Pengumpulan Tugas
+1. Tambah Tugas
+2. Edit Tugas
+3. Hapus Tugas
+4. Tampilkan Semua Tugas
+5. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Naik)
+6. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Turun)
+7. Cari Tugas Berdasarkan Nama
+8. Keluar
+Pilih opsi: 4
+1. Nama: Bahasa Indonesia, Tenggat: 23-06-2025
+2. Nama: Praktikum Sistem Digital, Tenggat: 25-07-2024
+3. Nama: Inggris, Tenggat: 25-06-2024
+4. Nama: Algoritma, Tenggat: 24-06-2024
+5. Nama: Struktur Data, Tenggat: 11-05-2024
+Manajemen Pengumpulan Tugas
+1. Tambah Tugas
+2. Edit Tugas
+3. Hapus Tugas
+4. Tampilkan Semua Tugas
+5. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Naik)
+6. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Turun)
+7. Cari Tugas Berdasarkan Nama
+8. Keluar
+Pilih opsi: 6
+Tugas telah diurutkan secara descending berdasarkan tenggat pengumpulan.
+Manajemen Pengumpulan Tugas
+1. Tambah Tugas
+2. Edit Tugas
+3. Hapus Tugas
+4. Tampilkan Semua Tugas
+5. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Naik)
+6. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Turun)
+7. Cari Tugas Berdasarkan Nama
+8. Keluar
+Pilih opsi: 4
+1. Nama: Bahasa Indonesia, Tenggat: 23-06-2025
+2. Nama: Praktikum Sistem Digital, Tenggat: 25-07-2024
+3. Nama: Inggris, Tenggat: 25-06-2024
+4. Nama: Algoritma, Tenggat: 24-06-2024
+5. Nama: Struktur Data, Tenggat: 11-05-2024
+Manajemen Pengumpulan Tugas
+1. Tambah Tugas
+2. Edit Tugas
+3. Hapus Tugas
+4. Tampilkan Semua Tugas
+5. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Naik)
+6. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Turun)
+7. Cari Tugas Berdasarkan Nama
+8. Keluar
+Pilih opsi: 7
+Masukkan nama tugas yang ingin dicari: Algoritma
+Tugas ditemukan: Nama: Algoritma, Tenggat: 24-06-2024
+Manajemen Pengumpulan Tugas
+1. Tambah Tugas
+2. Edit Tugas
+3. Hapus Tugas
+4. Tampilkan Semua Tugas
+5. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Naik)
+6. Urutkan Tugas Berdasarkan Tenggat Pengumpulan (Turun)
+7. Cari Tugas Berdasarkan Nama
+8. Keluar
+Pilih opsi: 8
+Keluar dari program.
